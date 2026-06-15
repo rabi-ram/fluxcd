@@ -3,16 +3,15 @@ kind: Kustomization
 
 metadata:
   name: nginx
-
   namespace: flux-system
 
 spec:
   interval: 1m
-
   path: ./apps/nginx
-
   prune: true
 
   sourceRef:
     kind: GitRepository
     name: flux-system
+
+    
